@@ -1,0 +1,28 @@
+schema: spec-driven
+context: |
+  Migraine Tracker — a Progressive Web App for quickly logging migraines
+  with automatic weather/barometric pressure tracking.
+
+  Tech stack: Vanilla HTML/CSS/JS (no framework, no build step)
+  Storage: localStorage (JSON-serialized)
+  Weather API: Open-Meteo (free, no API key)
+  Charts: Chart.js (planned for Phase 3)
+  Hosting: GitHub Pages (HTTPS required for PWA + geolocation)
+  Architecture: Single-page app with hash-based routing, IIFE module pattern
+  Design: Dark theme default, large tap targets, migraine-friendly (minimal visual noise)
+  Offline-first: Log button must always work without internet
+  Data ownership: Everything on-device, export always available, no accounts
+rules:
+  proposal:
+    - Note which existing specs are affected
+    - Flag any data model changes explicitly
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use SHALL for mandatory requirements, SHOULD for recommended, MAY for optional
+    - Describe observable behavior, not implementation details
+  design:
+    - Document alternatives considered
+    - Note impact on existing modules
+  tasks:
+    - Keep tasks atomic and testable
+    - Reference specific files to be created or modified
